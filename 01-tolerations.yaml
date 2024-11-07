@@ -3,6 +3,11 @@ kind: Pod
 metadata:
   name: nginx
 spec:
+  tolerations:
+  - key: "hardware"
+    operator: "Equal"
+    value: "gpu"
+    effect: "NoSchedule"
   containers:
   - name: nginx
     image: nginx:stable-perl 
