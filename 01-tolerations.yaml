@@ -12,4 +12,4 @@ spec:
   - name: nginx
     image: nginx:stable-perl 
   nodeSelector:
-    disktype: ssd 
+    hardware: gpu 
